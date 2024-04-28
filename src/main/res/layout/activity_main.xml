@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_custom_gradient"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-365dp">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="76dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="320dp"
+                app:srcCompat="@drawable/profilepg"
+                android:paddingEnd="1dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="300dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="320dp"
+                android:src="@drawable/baseline_format_list_bulleted_24" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/urbanistvariablefontwght"
+                android:paddingStart="30dp"
+                android:text="Welocome Back,"
+                android:textSize="30dp" />
+
+            <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amin safouh"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:paddingStart="32dp" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView1"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView2"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/my_custom_gradient2"
+                        android:layout_gravity="center_vertical|center_horizontal">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="91dp"
+                            android:layout_marginLeft="10dp"
+
+                            android:src="@drawable/product" />
+
+                        <TextView
+                            android:layout_width="88dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="Product1"
+
+                            android:textStyle="bold" />
+                        <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:text="0"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/cardView1"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="190dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/my_custom_gradient2"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="88dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:text="Storage2"
+                            android:textAlignment="textEnd"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="99dp"
+                        android:layout_height="90dp"
+
+                        android:src="@drawable/warehousestorage" />
+                </androidx.cardview.widget.CardView>
+                <!--NavBar-->
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="vertical" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_margin="5dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/myyellow">
+                        <TextView
+                            android:layout_width="1in"
+                            android:layout_height="wrap_content"
+                            android:text="Product"
+                            android:textSize="30dp"
+                            android:textStyle="bold"/>
+
+                        <ImageView
+
+                            android:layout_width="3in"
+                            android:layout_height="match_parent"
+                            android:paddingEnd="100dp"
+                            android:src="@drawable/barchar" />
+
+                    </androidx.cardview.widget.CardView>
+                    <!--Cardview2-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/myorange">
+                        <TextView
+                            android:layout_width="1in"
+                            android:layout_height="wrap_content"
+                            android:text="Stocks"
+                            android:textSize="30dp"
+                            android:textStyle="bold"/>
+
+                        <ImageView
+
+                            android:layout_width="3in"
+                            android:layout_height="match_parent"
+                            android:paddingEnd="100dp"
+
+                            android:src="@drawable/piecar" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            <!--framelayout-->
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/my_custom_gradient2"
+                tools:context=".MainActivity">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    </LinearLayout>
+                </ScrollView>
+
+                <FrameLayout
+                    android:id="@+id/frame_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
+                <com.google.android.material.bottomappbar.BottomAppBar
+                    android:id="@+id/bottomAppBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/white"
+                    app:fabCradleMargin="10dp"
+                    app:fabCradleRoundedCornerRadius="50dp">
+
+                    <com.google.android.material.bottomnavigation.BottomNavigationView
+                        android:id="@+id/bottomNavigationView"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="50dp"
+                        android:background="@android:color/transparent"
+                        app:labelVisibilityMode="labeled"
+                        app:menu="@menu/nav_menu" >
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:layout_width="201dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/white"
+                            android:src="@drawable/ic_baseline_add_24"
+                            app:maxImageSize="40dp"
+                            app:tint="@color/black" />
+                    </com.google.android.material.bottomnavigation.BottomNavigationView>
+                </com.google.android.material.bottomappbar.BottomAppBar>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

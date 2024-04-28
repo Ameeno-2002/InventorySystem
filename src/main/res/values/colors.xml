@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#0D0C0B</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="myyellow">#F5ED31</color>
+    <color name="myorange">#FF934F</color>
+    <color name="mygrey">#DDDDDD</color>
+    <color name="lightBlue">#6C7BFF</color>
+    <color name="start_color">
+        #fffc00</color>
+    <color name="limeyello">#FFFF9E</color>
+    <!--Custom_color-->
+    <color name="end_color">#ffffff</color>
+    <color name="green_200">#55cf86</color>
+    <color name="palegreen">#F2FFAA</color>
+    <color name="Pinkeyy">#FFC9FA</color>
+</resources>
